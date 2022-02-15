@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1996633995192186805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996633995192186804}
+  - component: {fileID: 1996633995192186807}
+  m_Layer: 0
+  m_Name: FingersUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996633995192186804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996633995192186805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.741133, y: -6.4735107, z: 0.34490776}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996633995192186807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996633995192186805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47057c7b8f495bb4d934c3c24580e7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  fingers: 0
+  selection: 0
+  indexTip: {fileID: 0}
+  indexJoint: {fileID: 0}
+  middleTip: {fileID: 0}
+  middleJoint: {fileID: 0}
+  ringTip: {fileID: 0}
+  ringJoint: {fileID: 0}
+  pinkyTip: {fileID: 0}
+  pinkyJoint: {fileID: 0}
+  indexTip2: {fileID: 0}
+  indexJoint2: {fileID: 0}
+  middleTip2: {fileID: 0}
+  middleJoint2: {fileID: 0}
+  ringTip2: {fileID: 0}
+  ringJoint2: {fileID: 0}
+  pinkyTip2: {fileID: 0}
+  pinkyJoint2: {fileID: 0}
+  thumbTip: {fileID: 0}
+  thumbJoint: {fileID: 0}
+  thumbTip2: {fileID: 0}
+  thumbJoint2: {fileID: 0}
+  colorSelect1: {fileID: 0}
+  colorSelect2: {fileID: 0}
+  choice: {fileID: 2100000, guid: 2a679851b7760534d8283729a2bf96e7, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 92bea6e6e6980904ea05de1c406b8c64, type: 2}
+  c1: {fileID: 0}
+  c2: {fileID: 0}
+  c3: {fileID: 0}
+  c4: {fileID: 0}
+  c5: {fileID: 0}
+  c6: {fileID: 0}
+  c7: {fileID: 0}
+  c8: {fileID: 0}
+  c9: {fileID: 0}
+  c10: {fileID: 0}
+  vector: 
+  selections: 
