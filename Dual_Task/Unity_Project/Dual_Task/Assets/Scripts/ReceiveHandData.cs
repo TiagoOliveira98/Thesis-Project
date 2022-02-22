@@ -142,7 +142,7 @@ public class ReceiveHandData : MonoBehaviour {
             "RING_FINGER_MCP2,RING_FINGER_PIP2,RING_FINGER_DIP2,RING_FINGER_TIP2," +
             "PINKY_MCP2,PINKY_PIP2,PINKY_DIP2,PINKY_TIP2," +
             "Timestamp,Event";
-            log.GetComponent<DataLogs>().Log(line, "DnF", false);
+            //log.GetComponent<DataLogs>().Log(line, "DnF", false);
             line = "";
         }
         check2 = 0;

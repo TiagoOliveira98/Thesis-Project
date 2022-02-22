@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\Delete.cs" />
     <Compile Include="Assets\Scripts\HandAffected.cs" />
     <Compile Include="Assets\Scripts\HandConnection.cs" />
     <Compile Include="Assets\Scripts\FingerCounting.cs" />
@@ -64,14 +65,20 @@
     <Compile Include="Assets\Scripts\OutsideProtection.cs" />
     <Compile Include="Assets\Scripts\FingerCount.cs" />
     <Compile Include="Assets\Scripts\DataLogs.cs" />
+    <Compile Include="Assets\Scripts\Chrono.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Scripts\ReceiveHandData.cs" />
+    <Compile Include="Assets\Scripts\Confirmation.cs" />
+    <Compile Include="Assets\Scripts\Calculator.cs" />
     <Compile Include="Assets\Scripts\ReachingTest.cs" />
+    <Compile Include="Assets\Scripts\HighScore.cs" />
     <Compile Include="Assets\Scripts\Calibration.cs" />
     <Compile Include="Assets\Scripts\Username.cs" />
     <Compile Include="Assets\Scripts\ColliderCheck.cs" />
     <Compile Include="Assets\Scripts\Grab.cs" />
+    <Compile Include="Assets\Scripts\ColorButtons.cs" />
     <Compile Include="Assets\Scripts\Raycast.cs" />
+    <Compile Include="Assets\Scripts\GetNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

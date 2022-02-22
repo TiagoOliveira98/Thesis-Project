@@ -22,6 +22,11 @@ public class Calibration : MonoBehaviour
     public string hand1;
     public static string hand;
 
+    public GameObject cover;
+    public GameObject values;
+
+    public Text answerType;
+
     //public GameObject colliderCheck;
 
     // Start is called before the first frame update
@@ -31,8 +36,8 @@ public class Calibration : MonoBehaviour
         timerIsRunning = true;
 
         //Keep the cube in the start position for the calibration process
-        cube.GetComponent<Rigidbody>().isKinematic = true;
-        cube.GetComponent<Rigidbody>().detectCollisions = false;
+        //cube.GetComponent<Rigidbody>().isKinematic = true;
+        //cube.GetComponent<Rigidbody>().detectCollisions = false;
 
         //Start the reference for both hands at 0
         distRef = 0f;
@@ -96,9 +101,14 @@ public class Calibration : MonoBehaviour
                     cube.GetComponent<Rigidbody>().isKinematic = false;
                     cube.GetComponent<Rigidbody>().detectCollisions = true;
                 }
-                
+
 
                 //colliderCheck.GetComponent<ColliderCheck>().menuOn = true;
+                Destroy(cover);
+                values.GetComponent<TextMesh>().characterSize = 1.2f;
+                answerType.GetComponent<Text>().fontSize = 17;
+                GameObject.Find("Chronometer").GetComponent<Chrono>().go = true;
+
             }
         }
         else 
