@@ -91,10 +91,14 @@ public class ReceiveHandData : MonoBehaviour {
 
     int check2, check3;
 
+    Points points;
+    GameObject cameras;
+
     // start
     public void Start()
     {
-       
+        cameras = GameObject.Find("Main Camera");
+        points = cameras.GetComponent<Points>();
 
         init();
         
@@ -276,10 +280,10 @@ public class ReceiveHandData : MonoBehaviour {
                 //{
                     GrabPointRight.tag = "Closed";
                     //GameObject check = GameObject.Find("Logging");
-                    if (check != null)
+                    /*if (check != null)
                     {
                         check.GetComponent<DataLogs>().ev = "Right Hand Closed ";
-                    }
+                    }*/
                     check3 = 1;
                 //}
             }
@@ -377,10 +381,11 @@ public class ReceiveHandData : MonoBehaviour {
                 //if (check2 == 0)
                 //{
                     //GameObject check = GameObject.Find("Logging");
-                    if (check != null)
+                    //Not appear hand
+                    /*if (check != null)
                     {
                         check.GetComponent<DataLogs>().ev += "Left Hand Closed";
-                    }
+                    }*/
                     check2 = 1;
                 //}
                 //GameObject.Find("Logging").GetComponent<DataLogs>().ev = "Left Hand Closed";
@@ -395,7 +400,16 @@ public class ReceiveHandData : MonoBehaviour {
             GameObject g = GameObject.Find("FingersUp");
             if ( g != null )
             {
-                string s = " " + g.GetComponent<FingerCounting>().fingers.ToString();
+                /*string s = " " + g.GetComponent<FingerCounting>().fingers.ToString();
+                check.GetComponent<DataLogs>().ev += s;*/
+
+                string s = /*" " + */GameObject.Find("Calculator").GetComponent<Calculator>().solution;
+                check.GetComponent<DataLogs>().ev += s;
+
+                s = " " + Confirmation.answer;
+                check.GetComponent<DataLogs>().ev += s;
+
+                s = " " + points.point;
                 check.GetComponent<DataLogs>().ev += s;
             }
 
