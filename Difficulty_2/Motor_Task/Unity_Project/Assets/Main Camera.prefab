@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &781143452275347972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781143452275348093}
+  - component: {fileID: 781143452275348094}
+  - component: {fileID: 781143452275348095}
+  - component: {fileID: 781143452275348088}
+  - component: {fileID: 781143452275348089}
+  - component: {fileID: 781143452275348091}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &781143452275348093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: -3.68, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &781143452275348094
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!124 &781143452275348095
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_Enabled: 1
+--- !u!81 &781143452275348088
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_Enabled: 1
+--- !u!114 &781143452275348089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281684ced816cf143ab268a1ade133f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 0
+  WRIST: {fileID: 0}
+  THUMB_CMC: {fileID: 0}
+  THUMB_MCP: {fileID: 0}
+  THUMB_IP: {fileID: 0}
+  THUMB_TIP: {fileID: 0}
+  INDEX_FINGER_MCP: {fileID: 0}
+  INDEX_FINGER_PIP: {fileID: 0}
+  INDEX_FINGER_DIP: {fileID: 0}
+  INDEX_FINGER_TIP: {fileID: 0}
+  MIDDLE_FINGER_MCP: {fileID: 0}
+  MIDDLE_FINGER_PIP: {fileID: 0}
+  MIDDLE_FINGER_DIP: {fileID: 0}
+  MIDDLE_FINGER_TIP: {fileID: 0}
+  RING_FINGER_MCP: {fileID: 0}
+  RING_FINGER_PIP: {fileID: 0}
+  RING_FINGER_DIP: {fileID: 0}
+  RING_FINGER_TIP: {fileID: 0}
+  PINKY_MCP: {fileID: 0}
+  PINKY_PIP: {fileID: 0}
+  PINKY_DIP: {fileID: 0}
+  PINKY_TIP: {fileID: 0}
+  WRIST2: {fileID: 0}
+  THUMB_CMC2: {fileID: 0}
+  THUMB_MCP2: {fileID: 0}
+  THUMB_IP2: {fileID: 0}
+  THUMB_TIP2: {fileID: 0}
+  INDEX_FINGER_MCP2: {fileID: 0}
+  INDEX_FINGER_PIP2: {fileID: 0}
+  INDEX_FINGER_DIP2: {fileID: 0}
+  INDEX_FINGER_TIP2: {fileID: 0}
+  MIDDLE_FINGER_MCP2: {fileID: 0}
+  MIDDLE_FINGER_PIP2: {fileID: 0}
+  MIDDLE_FINGER_DIP2: {fileID: 0}
+  MIDDLE_FINGER_TIP2: {fileID: 0}
+  RING_FINGER_MCP2: {fileID: 0}
+  RING_FINGER_PIP2: {fileID: 0}
+  RING_FINGER_DIP2: {fileID: 0}
+  RING_FINGER_TIP2: {fileID: 0}
+  PINKY_MCP2: {fileID: 0}
+  PINKY_PIP2: {fileID: 0}
+  PINKY_DIP2: {fileID: 0}
+  PINKY_TIP2: {fileID: 0}
+  gain: 10
+  gain2: 3.5
+  gain3: 0
+  newdata: []
+  GrabPointRight: {fileID: 0}
+  GrabPointLeft: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftHand: {fileID: 0}
+  grabRight: {fileID: 0}
+  grabLeft: {fileID: 0}
+  log: {fileID: 0}
+  ref1: 0
+  ref2: 0
+--- !u!114 &781143452275348091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781143452275347972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5575484ab1fa43648ba8aab5ca8431ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 0
+  plane: {fileID: 0}
