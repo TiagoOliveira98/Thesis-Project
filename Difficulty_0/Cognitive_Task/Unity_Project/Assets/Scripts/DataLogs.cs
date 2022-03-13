@@ -12,6 +12,7 @@ public class DataLogs : MonoBehaviour
 {
     private StreamWriter fileWriter;
     float time;
+    public bool close;
 
     long timestamp;
 
