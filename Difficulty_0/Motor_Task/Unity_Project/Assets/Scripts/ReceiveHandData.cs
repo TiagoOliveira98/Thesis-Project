@@ -408,10 +408,13 @@ public class ReceiveHandData : MonoBehaviour {
                 //string s = " " + g.GetComponent<FingerCounting>().fingers.ToString();
                 //check.GetComponent<DataLogs>().ev += s;
 
-                string s = /*" " + */GameObject.Find("Calculator").GetComponent<Calculator>().solution;
-                check.GetComponent<DataLogs>().ev += s;
+                ///string s = /*" " + */GameObject.Find("Calculator").GetComponent<Calculator>().solution;
+                ///check.GetComponent<DataLogs>().ev += s;
 
-                s = " " + Confirmation.answer;
+                ///s = " " + Confirmation.answer;
+                ///check.GetComponent<DataLogs>().ev += s;
+                
+                string s = /*" " + */GameObject.Find("Calculator").GetComponent<Calculator>().check.ToString();
                 check.GetComponent<DataLogs>().ev += s;
 
                 s = " " + points.point;
