@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0A7A899F-776D-3B96-404E-B8E458CE3311}</ProjectGuid>
+    <ProjectGuid>{96751507-7229-51C8-E6D7-43BB1A23789B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\TwoMinutes.cs" />
+    <Compile Include="Assets\Scripts\GetNumber.cs" />
     <Compile Include="Assets\Scripts\Delete.cs" />
     <Compile Include="Assets\Scripts\HandAffected.cs" />
     <Compile Include="Assets\Scripts\HandConnection.cs" />
@@ -78,7 +80,6 @@
     <Compile Include="Assets\Scripts\Grab.cs" />
     <Compile Include="Assets\Scripts\ColorButtons.cs" />
     <Compile Include="Assets\Scripts\Raycast.cs" />
-    <Compile Include="Assets\Scripts\GetNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

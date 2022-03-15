@@ -3393,7 +3393,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &514391969
 MonoBehaviour:
@@ -4107,7 +4107,7 @@ MonoBehaviour:
   leftHand: {fileID: 1595947949}
   grabRight: {fileID: 145983042}
   grabLeft: {fileID: 277856037}
-  log: {fileID: 0}
+  log: {fileID: 810949602}
   ref1: 0
   ref2: 0
 --- !u!81 &744174479
@@ -5933,7 +5933,7 @@ MonoBehaviour:
 
 
     Try to answer correctly
-    to as many problems as possible in 2 minutes'
+    to as many problems as possible in 1 minute'
 --- !u!222 &1127614498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9414,7 +9414,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!1 &1603109971
 GameObject:
@@ -12804,56 +12804,6 @@ MonoBehaviour:
   thumbJoint: {fileID: 2117200576}
   thumbTip2: {fileID: 1620032696}
   thumbJoint2: {fileID: 220016399}
---- !u!1 &676390301505371689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 676390301505371695}
-  - component: {fileID: 676390301505371694}
-  m_Layer: 0
-  m_Name: HighScore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &676390301505371694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676390301505371689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef0cb6a899455d04f807245d0551a5e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameras: {fileID: 744174477}
-  high: {fileID: 6909753777931683318}
-  num: 0
-  x: []
-  change: 0
-  path: 
-  line: 
---- !u!4 &676390301505371695
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676390301505371689}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1387982, y: -6.5216503, z: 0.28917408}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3411729409946329156
 GameObject:
   m_ObjectHideFlags: 0
@@ -12897,7 +12847,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3654762574175084332
 GameObject:
@@ -13313,7 +13263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699072434255
 Rigidbody:
@@ -13421,7 +13371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!1 &8898153699176165242
 GameObject:
@@ -13841,7 +13791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699553229461
 Rigidbody:
@@ -13892,7 +13842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699594654553
 Rigidbody:
@@ -14007,7 +13957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699640154306
 Rigidbody:
@@ -14135,7 +14085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699869115234
 Rigidbody:
@@ -14263,7 +14213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699927015770
 Rigidbody:
@@ -14391,7 +14341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700250274194
 Rigidbody:
@@ -14532,7 +14482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700311868457
 Rigidbody:
@@ -14736,7 +14686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd587108840fcc42a9877cb3cb30557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
 --- !u!54 &8898153700480135309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14897,7 +14847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700814112169
 Rigidbody:

@@ -27,6 +27,8 @@ public class Calibration : MonoBehaviour
 
     public Text answerType;
 
+    public GameObject c, w;
+
     //public GameObject colliderCheck;
 
     // Start is called before the first frame update
@@ -106,8 +108,12 @@ public class Calibration : MonoBehaviour
                 //colliderCheck.GetComponent<ColliderCheck>().menuOn = true;
                 Destroy(cover);
                 values.GetComponent<TextMesh>().characterSize = 1.2f;
-                answerType.GetComponent<Text>().fontSize = 17;
+                //answerType.GetComponent<Text>().fontSize = 17;
+                answerType.GetComponent<RectTransform>().localScale = new Vector3(2f, 2f, 1f);
                 GameObject.Find("Chronometer").GetComponent<Chrono>().go = true;
+
+                c.GetComponent<TextMesh>().characterSize = 1f;
+                w.GetComponent<TextMesh>().characterSize = 1f;
 
             }
         }

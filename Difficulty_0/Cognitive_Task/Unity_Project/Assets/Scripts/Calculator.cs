@@ -141,10 +141,10 @@ public class Calculator : MonoBehaviour
             if (check == 0)
             {
                 //Create a wrong answer
-                ansAux = ans + Random.Range(-10, 11);
-                while (ansAux < 0)
+                ansAux = ans + Random.Range(-20, 21);
+                while (ansAux < 0 || ansAux == ans )
                 {
-                    ansAux = ans + Random.Range(-10, 11);
+                    ansAux = ans + Random.Range(-20, 21);
                 }
                 ans = ansAux;
                 //solution 

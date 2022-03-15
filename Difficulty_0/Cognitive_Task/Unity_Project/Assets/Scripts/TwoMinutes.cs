@@ -17,7 +17,7 @@ public class TwoMinutes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer.GetComponent<Chrono>().elapsedTime > 120f)
+        if(timer.GetComponent<Chrono>().elapsedTime > 60f)
         {
             //dataLog.GetComponent<DataLogs>().close = true;
             //Application.Quit();

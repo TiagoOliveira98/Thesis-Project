@@ -15,11 +15,11 @@ C:/Users/tiago/Documents/Thesis-Project/Difficulty_1/Cognitive_Task/Unity_Projec
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51927
+52454
 Successfully changed project path to: C:/Users/tiago/Documents/Thesis-Project/Difficulty_1/Cognitive_Task/Unity_Project
 C:/Users/tiago/Documents/Thesis-Project/Difficulty_1/Cognitive_Task/Unity_Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.81 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -35,67 +35,37 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001279 seconds.
+Registered in 0.001061 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.854 seconds
+- Completed reload, in  0.945 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003887 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.006 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 66.0 MB.
-System memory in use after: 66.0 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1849.
-Total: 2.142000 ms (FindLiveObjects: 0.155200 ms CreateObjectMapping: 0.035200 ms MarkObjects: 1.861500 ms  DeleteObjects: 0.089100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003550 seconds.
+Registered in 0.004632 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.927 seconds
+- Completed reload, in  1.123 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 65.9 MB.
+Unloading 1416 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.0 MB.
 System memory in use after: 66.0 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1853.
-Total: 1.826300 ms (FindLiveObjects: 0.141700 ms CreateObjectMapping: 0.035500 ms MarkObjects: 1.599200 ms  DeleteObjects: 0.048700 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1850.
+Total: 2.086000 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.038000 ms MarkObjects: 1.785900 ms  DeleteObjects: 0.082500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -109,17 +79,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/2minutes.prefab
-  artifactKey: Guid(6ad9d6f75304be049a793dc117b16b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2minutes.prefab using Guid(6ad9d6f75304be049a793dc117b16b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c7955c605d921d212a1057382e49f7') in 0.041979 seconds 
-  Import took 0.044907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/TwoMinutes.unitypackage
-  artifactKey: Guid(a988ae3613eb580469012e353681fd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TwoMinutes.unitypackage using Guid(a988ae3613eb580469012e353681fd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ae60dee1c8766564f4dca58fc7a4c0') in 0.027118 seconds 
-  Import took 0.030097 seconds .
+  path: Assets/Scripts/Calculator.cs
+  artifactKey: Guid(b553dcf247de1c64cb6ab3d01e324e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Calculator.cs using Guid(b553dcf247de1c64cb6ab3d01e324e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19545b3a7b0e69328701f3298557a724') in 0.029472 seconds 
+  Import took 0.032548 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

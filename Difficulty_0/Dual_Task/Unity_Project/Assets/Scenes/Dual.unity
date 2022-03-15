@@ -3380,7 +3380,7 @@ TextMesh:
   m_GameObject: {fileID: 584247316}
   m_Text: WRONG
   m_OffsetZ: 0
-  m_CharacterSize: 1
+  m_CharacterSize: 0
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
@@ -3983,6 +3983,8 @@ MonoBehaviour:
   hand1: 
   cover: {fileID: 1597496790}
   values: {fileID: 8898153698835806535}
+  c: {fileID: 920489987}
+  w: {fileID: 584247316}
 --- !u!1 &778493386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,7 +4877,7 @@ TextMesh:
   m_GameObject: {fileID: 920489987}
   m_Text: RIGHT
   m_OffsetZ: 0
-  m_CharacterSize: 1
+  m_CharacterSize: 0
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0

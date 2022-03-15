@@ -50,10 +50,28 @@ public class Calculator : MonoBehaviour
             int parcel = Random.Range(1, 4);
             if (parcel == 1)
             {
+                //Added
+                while (num2 == ans && num2 == 0)
+                {
+                    num1 = Random.Range(0, 10);
+                    num2 = Random.Range(0, 10);
+
+                    ans = num1 * num2;
+                }
+
                 solution = num1.ToString();
             }
             else if (parcel == 2)
             {
+                //Added
+                while (num1 == ans && num1 == 0)
+                {
+                    num1 = Random.Range(0, 10);
+                    num2 = Random.Range(0, 10);
+
+                    ans = num1 * num2;
+                }
+
                 solution = num2.ToString();
             }
             else if (parcel == 3)

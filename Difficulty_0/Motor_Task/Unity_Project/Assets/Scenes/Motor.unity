@@ -3884,6 +3884,8 @@ MonoBehaviour:
   cover: {fileID: 1597496790}
   values: {fileID: 8898153698835806535}
   answerType: {fileID: 1500463412}
+  c: {fileID: 1131564412}
+  w: {fileID: 1744503378}
 --- !u!1 &778493386
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,7 +5456,7 @@ TextMesh:
   m_GameObject: {fileID: 1131564412}
   m_Text: RIGHT
   m_OffsetZ: 0
-  m_CharacterSize: 1
+  m_CharacterSize: 0
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
@@ -7651,7 +7653,7 @@ RectTransform:
   m_GameObject: {fileID: 1500463410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1686772227}
   m_RootOrder: 11
@@ -7683,7 +7685,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 1
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -9433,7 +9435,7 @@ TextMesh:
   m_GameObject: {fileID: 1744503378}
   m_Text: WRONG
   m_OffsetZ: 0
-  m_CharacterSize: 1
+  m_CharacterSize: 0
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
