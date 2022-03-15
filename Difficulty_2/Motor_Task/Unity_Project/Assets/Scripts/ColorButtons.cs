@@ -15,7 +15,7 @@ public class ColorButtons : MonoBehaviour
 
     public Material myMaterial1, myMaterial2;
 
-    float time;
+    public float time;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class ColorButtons : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time > 1)
+        if(time > 0.1f)
         {
             string s = GameObject.Find("Calculator").GetComponent<Calculator>().solution;
             if(s != null )

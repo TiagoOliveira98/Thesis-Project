@@ -4107,7 +4107,7 @@ MonoBehaviour:
   leftHand: {fileID: 1595947949}
   grabRight: {fileID: 145983042}
   grabLeft: {fileID: 277856037}
-  log: {fileID: 0}
+  log: {fileID: 810949602}
   ref1: 0
   ref2: 0
 --- !u!81 &744174479
@@ -13313,7 +13313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699072434255
 Rigidbody:
@@ -13421,7 +13421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!1 &8898153699176165242
 GameObject:
@@ -13841,7 +13841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699553229461
 Rigidbody:
@@ -13892,7 +13892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699594654553
 Rigidbody:
@@ -14007,7 +14007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699640154306
 Rigidbody:
@@ -14135,7 +14135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699869115234
 Rigidbody:
@@ -14263,7 +14263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153699927015770
 Rigidbody:
@@ -14391,7 +14391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700250274194
 Rigidbody:
@@ -14532,7 +14532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700311868457
 Rigidbody:
@@ -14736,7 +14736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd587108840fcc42a9877cb3cb30557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
 --- !u!54 &8898153700480135309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14897,7 +14897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0426463237d851d4eb36cc28a036a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 8898153700621799059}
+  screen: {fileID: 8898153698835806535}
   enter: {fileID: 8898153699445321613}
 --- !u!54 &8898153700814112169
 Rigidbody:

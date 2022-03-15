@@ -119,6 +119,7 @@ public class Confirmation : MonoBehaviour
             {
                 GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
                 points.point += 1;
+                GameObject.Find("ColorButton").GetComponent<ColorButtons>().time = 0f;
 
                 //Reset all materials
                 ResetMaterials();
