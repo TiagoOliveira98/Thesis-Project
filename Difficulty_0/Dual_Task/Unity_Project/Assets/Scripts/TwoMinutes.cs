@@ -20,8 +20,8 @@ public class TwoMinutes : MonoBehaviour
         if(timer.GetComponent<Chrono>().elapsedTime > 60f)
         {
             //dataLog.GetComponent<DataLogs>().close = true;
-            //Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 }

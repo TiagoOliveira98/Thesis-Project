@@ -154,10 +154,12 @@ public class DataLogs : MonoBehaviour
                         line += "," + PINKY_TIP2.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_TIP2.transform.position.z.ToString().Replace(",", ".") /*+ "\n"*/;
 
                         //log.GetComponent<DataLogs>().Log(line);
-                        if(UnityEditor.EditorApplication.isPlaying == false)
+                        //Commented for builds
+                        /*if(UnityEditor.EditorApplication.isPlaying == false)
                         {
                             CloseFile();
-                        }
+                        }*/
+                        
                         Log(line, ev, true);
                         //ev = "DnF";
                         ev = "";
