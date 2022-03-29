@@ -5972,7 +5972,7 @@ MonoBehaviour:
 
 
     Use
-    Numpad to answer and Enter/Delete to Confirm/Delete answer'
+    Number keys to answer and Right/Left Arrows to Confirm/Delete answer'
 --- !u!222 &1127614498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11034,7 +11034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 230}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835179440

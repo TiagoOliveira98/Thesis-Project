@@ -49,7 +49,7 @@ public class ReceiveHandData : MonoBehaviour {
         MIDDLE_FINGER_MCP, MIDDLE_FINGER_PIP, MIDDLE_FINGER_DIP, MIDDLE_FINGER_TIP, RING_FINGER_MCP,
         RING_FINGER_PIP, RING_FINGER_DIP, RING_FINGER_TIP, PINKY_MCP, PINKY_PIP, PINKY_DIP, PINKY_TIP;
 
-    Vector3 p0pos, p1pos, p2pos, p3pos, p4pos, p5pos, p6pos, p7pos, p8pos, p9pos, p10pos, p11pos, p12pos,
+    public Vector3 p0pos, p1pos, p2pos, p3pos, p4pos, p5pos, p6pos, p7pos, p8pos, p9pos, p10pos, p11pos, p12pos,
          p13pos, p14pos, p15pos, p16pos, p17pos, p18pos, p19pos, p20pos;
 
     // Added to create another hand
@@ -151,6 +151,8 @@ public class ReceiveHandData : MonoBehaviour {
         }
         check2 = 0;
         check3 = 0;
+
+        StartPosValues();
 
         //
         go = false;
@@ -409,6 +411,10 @@ public class ReceiveHandData : MonoBehaviour {
             check.GetComponent<DataLogs>().ev += s;
 
             s = " " + points.point;
+            check.GetComponent<DataLogs>().ev += s;
+
+            //NEW
+            s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().allow.ToString();
             check.GetComponent<DataLogs>().ev += s;
         }
 
@@ -724,6 +730,56 @@ public class ReceiveHandData : MonoBehaviour {
                     break;
             }
         }
+    }
+
+    void StartPosValues()
+    {
+        p0pos = new Vector3(50f, 50f, 0f);
+        p1pos = new Vector3(50f, 50f, 0f);
+        p2pos = new Vector3(50f, 50f, 0f);
+        p3pos = new Vector3(50f, 50f, 0f);
+        p4pos = new Vector3(50f, 50f, 0f);
+        p5pos = new Vector3(50f, 50f, 0f);
+        p6pos = new Vector3(50f, 50f, 0f);
+        p7pos = new Vector3(50f, 50f, 0f);
+        p8pos = new Vector3(50f, 50f, 0f);
+        p9pos = new Vector3(50f, 50f, 0f);
+        p10pos = new Vector3(50f, 50f, 0f);
+        p11pos = new Vector3(50f, 50f, 0f);
+        p12pos = new Vector3(50f, 50f, 0f);
+        p13pos = new Vector3(50f, 50f, 0f);
+        p14pos = new Vector3(50f, 50f, 0f);
+        p15pos = new Vector3(50f, 50f, 0f);
+        p16pos = new Vector3(50f, 50f, 0f);
+        p17pos = new Vector3(50f, 50f, 0f);
+        p18pos = new Vector3(50f, 50f, 0f);
+        p19pos = new Vector3(50f, 50f, 0f);
+        p20pos = new Vector3(50f, 50f, 0f);
+
+        p0pos2 = new Vector3(50f, 50f, 0f);
+        p1pos2 = new Vector3(50f, 50f, 0f);
+        p2pos2 = new Vector3(50f, 50f, 0f);
+        p3pos2 = new Vector3(50f, 50f, 0f);
+        p4pos2 = new Vector3(50f, 50f, 0f);
+        p5pos2 = new Vector3(50f, 50f, 0f);
+        p6pos2 = new Vector3(50f, 50f, 0f);
+        p7pos2 = new Vector3(50f, 50f, 0f);
+        p8pos2 = new Vector3(50f, 50f, 0f);
+        p9pos2 = new Vector3(50f, 50f, 0f);
+        p10pos2 = new Vector3(50f, 50f, 0f);
+        p11pos2 = new Vector3(50f, 50f, 0f);
+        p12pos2 = new Vector3(50f, 50f, 0f);
+        p13pos2 = new Vector3(50f, 50f, 0f);
+        p14pos2 = new Vector3(50f, 50f, 0f);
+        p15pos2 = new Vector3(50f, 50f, 0f);
+        p16pos2 = new Vector3(50f, 50f, 0f);
+        p17pos2 = new Vector3(50f, 50f, 0f);
+        p18pos2 = new Vector3(50f, 50f, 0f);
+        p19pos2 = new Vector3(50f, 50f, 0f);
+        p20pos2 = new Vector3(50f, 50f, 0f);
+
+        GrabPointRight.transform.position = new Vector3(50f, 50f, 0f);
+        GrabPointLeft.transform.position = new Vector3(50f, 50f, 0f);
     }
     
     void OnDisable()

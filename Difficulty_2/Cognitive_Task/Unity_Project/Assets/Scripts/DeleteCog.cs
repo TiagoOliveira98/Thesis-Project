@@ -26,7 +26,7 @@ public class DeleteCog : MonoBehaviour
         aux.transform.localPosition = new Vector3(aux.transform.localPosition.x, -0.2f, aux.transform.localPosition.z);
 
 
-        Invoke("ResetIn", 3);
+        Invoke("ResetIn", 1);
         //yield return new WaitForSecondsRealtime(5);
 
         //v.y = 0f;
@@ -46,7 +46,7 @@ public class DeleteCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Delete) == true)
+        if (Input.GetKeyDown(/*KeyCode.Delete*/KeyCode.LeftArrow) == true)
         {
             //PushButton();
             StartIn();

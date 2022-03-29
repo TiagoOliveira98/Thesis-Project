@@ -60,8 +60,8 @@ public class DataLogs : MonoBehaviour
                 timestamp = (long)timePass.TotalSeconds;
                 string path = Directory.GetCurrentDirectory();
                 //path += @"\DataLogging\JointData\Logs(0).csv";
-                path += @"\DataLogging\JointData\Logs" + "(" + timestamp + ")_" + Calibration.user + "_" + SceneManager.GetActiveScene().name + ".csv";
-                Directory.CreateDirectory(@"DataLogging\JointData");
+                path += @"/DataLogging/JointData/Logs" + "(" + timestamp + ")_" + Calibration.user + "_" + SceneManager.GetActiveScene().name + ".csv";
+                Directory.CreateDirectory(@"DataLogging/JointData");
                 fileWriter = File.CreateText(path);
 
                 ev = "";

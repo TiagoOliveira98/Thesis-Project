@@ -34,9 +34,9 @@ public class HighScore : MonoBehaviour
         //Read from the file the Highscore recorded
         path = Directory.GetCurrentDirectory();
         if(SceneManager.GetActiveScene().name == "GrabLeft")
-            path += @"\Users\" + Calibration.user +  @"\Highscores\Grab.txt";
+            path += @"/Users/" + Calibration.user +  @"/Highscores/Grab.txt";
         else
-            path += @"\Users\" + Calibration.user + @"\Highscores\" + SceneManager.GetActiveScene().name + ".txt";
+            path += @"/Users/" + Calibration.user + @"/Highscores/" + SceneManager.GetActiveScene().name + ".txt";
 
         //StreamReader reader = new StreamReader(path);
         //if (reader != null)

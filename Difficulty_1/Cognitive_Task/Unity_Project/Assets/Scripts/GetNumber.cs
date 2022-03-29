@@ -51,7 +51,7 @@ public class GetNumber : MonoBehaviour
         transform.localPosition = new Vector3(transform.localPosition.x, -0.2f, transform.localPosition.z);
 
 
-        Invoke("ResetIn", 3);
+        Invoke("ResetIn", 1);
         //yield return new WaitForSecondsRealtime(5);
 
         //v.y = 0f;

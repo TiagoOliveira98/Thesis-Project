@@ -27,7 +27,7 @@ public class ConfirmCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) == true)
+        if (/*Input.GetKeyDown(KeyCode.Return)*/Input.GetKeyDown(KeyCode.RightArrow) == true)
         {
             PushButton();
         }
@@ -92,71 +92,6 @@ public class ConfirmCog : MonoBehaviour
             points.point = 0;
             //Render the same operation
             //Maybe set a group of 3 hearts and take one of them out for each wrong answer
-            
-            /*
-            if (aux.text.Length == 1)
-            {
-                //No more lives left
-                //Reset points
-                //points.point = 0;
-
-                //Test
-                GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
-
-                points.point = 0;
-                aux.text = "";
-                for (int i = 0; i < 5; i++)
-                {
-                    if (i == 0)
-                        aux.text += heart;
-                    else
-                    {
-                        aux.text += ' ';
-                        aux.text += heart;
-                    }
-                }
-                auxString = null;
-            }
-            else
-            {
-                //aux.text = aux.text.Remove(aux.text.Length - 3);
-                //aux.text = string.Replace(heart, aux.text);
-                //TEST
-                auxString = aux.text.Split(' ');
-                sizeDebug = auxString.Length;
-
-                //if(auxString.Length > 1)
-                //{
-                aux.text = "";
-                for (int i = 0; i < auxString.Length - 1; i++)
-                {
-                    if (i == 0)
-                        aux.text += heart;
-                    else
-                    {
-                        aux.text += ' ';
-                        aux.text += heart;
-                    }
-
-                }
-                //}
-                //else
-                //{
-                //    points.point = 0;
-                //    aux.text = "";
-                //    for (int i = 0; i < 5; i++)
-                //    {
-                //        if (i == 0)
-                //            aux.text += heart;
-                //        else
-                //        {
-                //            aux.text += ' ';
-                //            aux.text += heart;
-                //        }
-                //    }
-                //    auxString = null;
-                //}
-            }*/
 
         }
         //Disable confirmations after entering aan answer

@@ -184,43 +184,43 @@ public class SelectNumber : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad0) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad0*/KeyCode.Alpha0) == true)
         {
             PushButton(0);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad1) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad1*/KeyCode.Alpha1) == true)
         {
             PushButton(1);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad2) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad2*/KeyCode.Alpha2) == true)
         {
             PushButton(2);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad3) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad3*/KeyCode.Alpha3) == true)
         {
             PushButton(3);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad4) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad4*/KeyCode.Alpha4) == true)
         {
             PushButton(4);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad5) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad5*/KeyCode.Alpha5) == true)
         {
             PushButton(5);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad6) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad6*/KeyCode.Alpha6) == true)
         {
             PushButton(6);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad7) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad7*/KeyCode.Alpha7) == true)
         {
             PushButton(7);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad8) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad8*/KeyCode.Alpha8) == true)
         {
             PushButton(8);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad9) == true)
+        if (Input.GetKeyDown(/*KeyCode.Keypad9*/KeyCode.Alpha9) == true)
         {
             PushButton(9);
         }

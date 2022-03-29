@@ -27,7 +27,7 @@ public class ConfirmCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) == true)
+        if (/*Input.GetKeyDown(KeyCode.Return)*/Input.GetKeyDown(KeyCode.RightArrow) == true)
         {
             PushButton();
         }

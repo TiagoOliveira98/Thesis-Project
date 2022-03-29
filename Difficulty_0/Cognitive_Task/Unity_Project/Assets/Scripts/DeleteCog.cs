@@ -26,7 +26,7 @@ public class DeleteCog : MonoBehaviour
         aux.transform.localPosition = new Vector3(aux.transform.localPosition.x, -0.2f, aux.transform.localPosition.z);
 
 
-        Invoke("ResetIn", 3);
+        Invoke("ResetIn", 1);
         //yield return new WaitForSecondsRealtime(5);
 
         //v.y = 0f;

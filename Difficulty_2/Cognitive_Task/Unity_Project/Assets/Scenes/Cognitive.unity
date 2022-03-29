@@ -5968,11 +5968,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Try to answer correctly to as many problems as possible in 2 minutes
+  m_Text: 'Try to answer correctly to as many problems as possible in 1 minute
 
 
     Use
-    Numpad to answer and Enter/Delete to Confirm/Delete answer'
+    Number keys to answer and Right/Left to Confirm/Delete answer'
 --- !u!222 &1127614498
 CanvasRenderer:
   m_ObjectHideFlags: 0

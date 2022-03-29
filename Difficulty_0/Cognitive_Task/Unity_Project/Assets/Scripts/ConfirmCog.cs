@@ -42,14 +42,14 @@ public class ConfirmCog : MonoBehaviour
 
         if(a==1)
         {
-            if (Input.GetKeyDown(KeyCode.Return) == true)
+            if (/*Input.GetKeyDown(KeyCode.Return)*/Input.GetKeyDown(KeyCode.RightArrow) == true)
             {
                 PushButton();
             }
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Delete) == true)
+            if (/*Input.GetKeyDown(KeyCode.Delete)*/ Input.GetKeyDown(KeyCode.LeftArrow) == true)
             {
                 PushButton();
             }
@@ -93,26 +93,37 @@ public class ConfirmCog : MonoBehaviour
         StartIn();
 
         //Case if the answer and solution are the same
-        if (/*Confirmation.answer*/a == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().check)
+        if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
         {
-            GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
-            points.point += 1;
+            if (/*Confirmation.answer*/a == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().check)
+            {
+                GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
+                points.point += 1;
 
-            //Debug.Log(answer);
-            //Reset the answer
-            //Confirmation.answer = -1;
-            //screen.GetComponent<TextMesh>().text = "Correct";
-            //Render another operation
+                //Debug.Log(answer);
+                //Reset the answer
+                //Confirmation.answer = -1;
+                //screen.GetComponent<TextMesh>().text = "Correct";
+                //Render another operation
 
-            //Give a Point or somethig similar/ Progress bar
-            //correct = true;
+                //Give a Point or somethig similar/ Progress bar
+                //correct = true;
 
-            //Text.GetComponent<Text>().text = latest;
+                //Text.GetComponent<Text>().text = latest;
 
+            }
+            else
+            {
+                points.point = 0;
+            }
         }
         else
         {
-            points.point = 0;
+            //NEW
+            if (points.point > 0)
+                points.point -= 1;
+            else
+                points.point = 0;
         }
         /*else
         {

@@ -98,21 +98,30 @@ public class Confirmation : MonoBehaviour
             //solution = GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution;
 
             StartIn();
-
-            //int answer1 = answer;
-            if(a == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().check)
+            if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
             {
-                Debug.Log("HERE");
-                GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
-                points.point += 1;
+                //int answer1 = answer;
+                if (a == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().check)
+                {
+                    //Debug.Log("HERE");
+                    GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
+                    points.point += 1;
 
-                //correct = true;
-                //answer = -1;
+                    //correct = true;
+                    //answer = -1;
+                }
+                else
+                {
+                    //NEW
+                    points.point = 0;
+                }
             }
             else
             {
-                //NEW
-                points.point = 0;
+                if (points.point > 0)
+                    points.point -= 1;
+                else
+                    points.point = 0;
             }
             /*else
             {

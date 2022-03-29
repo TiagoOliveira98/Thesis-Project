@@ -153,6 +153,7 @@ public class ReceiveHandData : MonoBehaviour {
         check2 = 0;
         check3 = 0;
 
+        StartPosValues();
         //
         go = false;
         Invoke("Wait", 2);
@@ -732,7 +733,57 @@ public class ReceiveHandData : MonoBehaviour {
             }
         }
     }
-    
+
+    void StartPosValues()
+    {
+        p0pos = new Vector3(50f, 50f, 0f);
+        p1pos = new Vector3(50f, 50f, 0f);
+        p2pos = new Vector3(50f, 50f, 0f);
+        p3pos = new Vector3(50f, 50f, 0f);
+        p4pos = new Vector3(50f, 50f, 0f);
+        p5pos = new Vector3(50f, 50f, 0f);
+        p6pos = new Vector3(50f, 50f, 0f);
+        p7pos = new Vector3(50f, 50f, 0f);
+        p8pos = new Vector3(50f, 50f, 0f);
+        p9pos = new Vector3(50f, 50f, 0f);
+        p10pos = new Vector3(50f, 50f, 0f);
+        p11pos = new Vector3(50f, 50f, 0f);
+        p12pos = new Vector3(50f, 50f, 0f);
+        p13pos = new Vector3(50f, 50f, 0f);
+        p14pos = new Vector3(50f, 50f, 0f);
+        p15pos = new Vector3(50f, 50f, 0f);
+        p16pos = new Vector3(50f, 50f, 0f);
+        p17pos = new Vector3(50f, 50f, 0f);
+        p18pos = new Vector3(50f, 50f, 0f);
+        p19pos = new Vector3(50f, 50f, 0f);
+        p20pos = new Vector3(50f, 50f, 0f);
+
+        p0pos2 = new Vector3(50f, 50f, 0f);
+        p1pos2 = new Vector3(50f, 50f, 0f);
+        p2pos2 = new Vector3(50f, 50f, 0f);
+        p3pos2 = new Vector3(50f, 50f, 0f);
+        p4pos2 = new Vector3(50f, 50f, 0f);
+        p5pos2 = new Vector3(50f, 50f, 0f);
+        p6pos2 = new Vector3(50f, 50f, 0f);
+        p7pos2 = new Vector3(50f, 50f, 0f);
+        p8pos2 = new Vector3(50f, 50f, 0f);
+        p9pos2 = new Vector3(50f, 50f, 0f);
+        p10pos2 = new Vector3(50f, 50f, 0f);
+        p11pos2 = new Vector3(50f, 50f, 0f);
+        p12pos2 = new Vector3(50f, 50f, 0f);
+        p13pos2 = new Vector3(50f, 50f, 0f);
+        p14pos2 = new Vector3(50f, 50f, 0f);
+        p15pos2 = new Vector3(50f, 50f, 0f);
+        p16pos2 = new Vector3(50f, 50f, 0f);
+        p17pos2 = new Vector3(50f, 50f, 0f);
+        p18pos2 = new Vector3(50f, 50f, 0f);
+        p19pos2 = new Vector3(50f, 50f, 0f);
+        p20pos2 = new Vector3(50f, 50f, 0f);
+
+        GrabPointRight.transform.position = new Vector3(50f, 50f, 0f);
+        GrabPointLeft.transform.position = new Vector3(50f, 50f, 0f);
+    }
+
     void OnDisable()
     {
         if (receiveThread != null)

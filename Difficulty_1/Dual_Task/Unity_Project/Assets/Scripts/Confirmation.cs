@@ -87,103 +87,49 @@ public class Confirmation : MonoBehaviour
 
             StartIn();
 
-            //Case if the answer and solution are the same
-            if (answer == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution)
+            if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
             {
-                GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
-                points.point += 1;
-
-                //Debug.Log(answer);
-                //Reset the answer
-                answer = "";
-                //screen.GetComponent<TextMesh>().text = "Correct";
-                //Render another operation
-
-                //Give a Point or somethig similar/ Progress bar
-                //correct = true;
-
-                //Text.GetComponent<Text>().text = latest;
-
-            }
-            else
-            {
-                screen.GetComponent<TextMesh>().text = GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().initial;
-                //Debug.Log(answer);
-                //Debug.Log(solution);
-                //Text aux = lives.GetComponent<Text>();
-                //size = aux.text.Length;
-
-                //Reset the answer
-                answer = "";
-                //NEW
-                points.point = 0;
-                //Render the same operation
-                //Maybe set a group of 3 hearts and take one of them out for each wrong answer
-
-                /*if(aux.text.Length == 1)
+                //Case if the answer and solution are the same
+                if (answer == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution)
                 {
-                    //No more lives left
-                    //Reset points
-                    //points.point = 0;
-
-                    //Test
                     GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().correct = true;
+                    points.point += 1;
 
-                    points.point = 0;
-                    aux.text = "";
-                    for (int i = 0; i < 5; i++)
-                    {
-                        if (i == 0)
-                            aux.text += heart;
-                        else
-                        {
-                            aux.text += ' ';
-                            aux.text += heart;
-                        }
-                    }
-                    auxString = null;
+                    //Debug.Log(answer);
+                    //Reset the answer
+                    answer = "";
+                    //screen.GetComponent<TextMesh>().text = "Correct";
+                    //Render another operation
+
+                    //Give a Point or somethig similar/ Progress bar
+                    //correct = true;
+
+                    //Text.GetComponent<Text>().text = latest;
+
                 }
                 else
                 {
-                    //aux.text = aux.text.Remove(aux.text.Length - 3);
-                    //aux.text = string.Replace(heart, aux.text);
-                    //TEST
-                    auxString = aux.text.Split(' ');
-                    sizeDebug = auxString.Length;
+                    screen.GetComponent<TextMesh>().text = GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().initial;
+                    //Debug.Log(answer);
+                    //Debug.Log(solution);
+                    //Text aux = lives.GetComponent<Text>();
+                    //size = aux.text.Length;
 
-                    //if(auxString.Length > 1)
-                    //{
-                        aux.text = "";
-                        for(int i = 0; i < auxString.Length - 1; i++)
-                        {
-                            if(i == 0)
-                                aux.text += heart;
-                            else
-                            {
-                                aux.text += ' ';
-                                aux.text += heart;
-                            }
-                            
-                        }
-                    //}
-                    //else
-                    //{
-                    //    points.point = 0;
-                    //    aux.text = "";
-                    //    for (int i = 0; i < 5; i++)
-                    //    {
-                    //        if (i == 0)
-                    //            aux.text += heart;
-                    //        else
-                    //        {
-                    //            aux.text += ' ';
-                    //            aux.text += heart;
-                    //        }
-                    //    }
-                    //    auxString = null;
-                    //}
-                }*/
+                    //Reset the answer
+                    answer = "";
+                    //NEW
+                    points.point = 0;
+                    //Render the same operation
+                    //Maybe set a group of 3 hearts and take one of them out for each wrong answer
 
+                }
+            }
+            else
+            {
+                if (points.point > 0)
+                    points.point -= 1;
+                else
+                    points.point = 0;
             }
             //Disable confirmations after entering aan answer
             canConfirm = false;

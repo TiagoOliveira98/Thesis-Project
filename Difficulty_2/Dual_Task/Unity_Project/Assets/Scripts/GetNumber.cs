@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 public class GetNumber : MonoBehaviour
 {
+    GameObject cameras;
+    Points points;
+
     public GameObject screen;
 
     public GameObject enter;
@@ -19,6 +22,8 @@ public class GetNumber : MonoBehaviour
     void Start()
     {
         //answer = "";
+        cameras = GameObject.Find("Main Camera");
+        points = cameras.GetComponent<Points>();
     }
 
     // Update is called once per frame
@@ -72,54 +77,49 @@ public class GetNumber : MonoBehaviour
         //Verify a collision with a finger tip
         if(other.name == "INDEX_FINGER_TIP" || other.name == "INDEX_FINGER_TIP2")
         {
-            //get the index of the '_' in the screen to be able to change
-            index = screen.GetComponent<TextMesh>().text.IndexOf("_");
-            if(index != -1)
+            if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
             {
-                screen.GetComponent<TextMesh>().text = screen.GetComponent<TextMesh>().text.Substring(0, index) + name + screen.GetComponent<TextMesh>().text.Substring(index + 1);
-                //answer += name; 
-                //str += name;
-                //Debug.Log("STR: " + str);
-                //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().answer = str;
-                //Debug.Log(GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().answer);
-                str = Confirmation.answer;
-                Debug.Log("STR: " + str);
-                answer = str + name;
-                Debug.Log("ANSWER: " + answer);
-                Confirmation.answer = answer ;
+                //get the index of the '_' in the screen to be able to change
+                index = screen.GetComponent<TextMesh>().text.IndexOf("_");
+                if (index != -1)
+                {
+                    screen.GetComponent<TextMesh>().text = screen.GetComponent<TextMesh>().text.Substring(0, index) + name + screen.GetComponent<TextMesh>().text.Substring(index + 1);
+                    //answer += name; 
+                    //str += name;
+                    //Debug.Log("STR: " + str);
+                    //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().answer = str;
+                    //Debug.Log(GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().answer);
+                    str = Confirmation.answer;
+                    Debug.Log("STR: " + str);
+                    answer = str + name;
+                    Debug.Log("ANSWER: " + answer);
+                    Confirmation.answer = answer;
 
-                //Logging
-                
-                GameObject check = GameObject.Find("Logging");
-                string s = " " + answer;
-                check.GetComponent<DataLogs>().ev += s;
-                s = " " + GameObject.Find("Calculator").GetComponent<Calculator>().solution;
-                check.GetComponent<DataLogs>().ev += s;
+                    //Logging
 
-                //Block double click
-                //GetComponent<Rigidbody>().detectCollisions = false;
-                ////////GetComponent<Collider>().enabled = false;
+                    GameObject check = GameObject.Find("Logging");
+                    string s = " " + answer;
+                    check.GetComponent<DataLogs>().ev += s;
+                    s = " " + GameObject.Find("Calculator").GetComponent<Calculator>().solution;
+                    check.GetComponent<DataLogs>().ev += s;
 
-                //Allow confirmations
-                enter.GetComponent<Confirmation>().canConfirm = true;
-                //Confirmation.canConfirm = true;
+                    //Allow confirmations
+                    enter.GetComponent<Confirmation>().canConfirm = true;
+                    //Confirmation.canConfirm = true;
 
-                //commented
-                //StartCoroutine("waiter");
-                startIn();
-                
-                
-                //wait 2 seconds
-                //float time = 0;
-                //while(time < 5)
-                //{
-                    //time += Time.deltaTime;
-                //}
-
-                //Unblock collisions
-                //GetComponent<Rigidbody>().detectCollisions = true;
-                ///////GetComponent<Collider>().enabled = true;
-            }          
+                    //commented
+                    //StartCoroutine("waiter");
+                    startIn();
+                }
+            }
+            else
+            {
+                if (points.point > 0)
+                    points.point -= 1;
+                else
+                    points.point = 0;
+            }
+            
         }
     }
     //private void OnTriggerStay(Collider other)
