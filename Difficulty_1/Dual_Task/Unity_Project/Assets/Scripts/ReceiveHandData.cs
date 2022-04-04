@@ -376,33 +376,9 @@ public class ReceiveHandData : MonoBehaviour {
             float centerZleft = (PINKY_TIP2.transform.position[2] * 0.15f + RING_FINGER_TIP2.transform.position[2] * 0.15f + MIDDLE_FINGER_TIP2.transform.position[2] * 0.25f + INDEX_FINGER_TIP2.transform.position[2] * 0.15f + THUMB_TIP2.transform.position[2] * 0.3f) /*/ 5.0f*/;
             GrabPointLeft.transform.position = new Vector3(centerXleft, centerYleft, centerZleft);
 
-            //Change the tag to Closed or Open
-            /*if (leftHandClosed == 1)
-            {
-                GrabPointLeft.tag = "Closed";
-                //if (check2 == 0)
-                //{
-                    //GameObject check = GameObject.Find("Logging");
-                    if (check != null)
-                    {
-                        check.GetComponent<DataLogs>().ev += "Left Hand Closed";
-                    }
-                    check2 = 1;
-                //}
-                //GameObject.Find("Logging").GetComponent<DataLogs>().ev = "Left Hand Closed";
-            }
-            else if (leftHandClosed == 0)
-            {
-                GrabPointLeft.tag = "Open";
-                check2 = 0;
-                //GameObject.Find("Logging").GetComponent<DataLogs>().ev = "Left Hand Opened";
-            }*/
-
             GameObject g = GameObject.Find("FingersUp");
         if (g != null)
         {
-            //string s = " " + g.GetComponent<FingerCounting>().fingers.ToString();
-            //check.GetComponent<DataLogs>().ev += s;
 
             string s = /*" " + */GameObject.Find("Calculator").GetComponent<Calculator>().solution;
             check.GetComponent<DataLogs>().ev += s;
@@ -417,74 +393,6 @@ public class ReceiveHandData : MonoBehaviour {
             s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().allow.ToString();
             check.GetComponent<DataLogs>().ev += s;
         }
-
-            //Logging Data
-            //if (GameObject.Find("BucketBlue") != null /*&& wristRightX != WRIST.transform.position.x && wristLeftX != WRIST2.transform.position.x*/)
-            /*{
-                //Right Hand
-                line += WRIST.transform.position.x.ToString().Replace(",", ".") + " " + WRIST.transform.position.y.ToString().Replace(",", ".") + " " + WRIST.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + THUMB_CMC.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_CMC.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_CMC.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_MCP.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_MCP.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_MCP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_IP.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_IP.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_IP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_TIP.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_TIP.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_TIP.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + INDEX_FINGER_MCP.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_MCP.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_MCP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_PIP.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_PIP.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_PIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_DIP.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_DIP.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_DIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_TIP.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_TIP.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_TIP.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + MIDDLE_FINGER_MCP.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_MCP.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_MCP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_PIP.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_PIP.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_PIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_DIP.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_DIP.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_DIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_TIP.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_TIP.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_TIP.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + RING_FINGER_MCP.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_MCP.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_MCP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_PIP.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_PIP.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_PIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_DIP.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_DIP.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_DIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_TIP.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_TIP.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_TIP.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + PINKY_MCP.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_MCP.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_MCP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_PIP.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_PIP.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_PIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_DIP.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_DIP.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_DIP.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_TIP.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_TIP.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_TIP.transform.position.z.ToString().Replace(",", ".");
-
-                //Left Hand
-                line += "," + WRIST2.transform.position.x.ToString().Replace(",", ".") + " " + WRIST2.transform.position.y.ToString().Replace(",", ".") + " " + WRIST2.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + THUMB_CMC2.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_CMC2.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_CMC2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_MCP2.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_MCP2.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_MCP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_IP2.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_IP2.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_IP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + THUMB_TIP2.transform.position.x.ToString().Replace(",", ".") + " " + THUMB_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + THUMB_TIP2.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + INDEX_FINGER_MCP2.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_MCP2.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_MCP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_PIP2.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_PIP2.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_PIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_DIP2.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_DIP2.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_DIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + INDEX_FINGER_TIP2.transform.position.x.ToString().Replace(",", ".") + " " + INDEX_FINGER_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + INDEX_FINGER_TIP2.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + MIDDLE_FINGER_MCP2.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_MCP2.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_MCP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_PIP2.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_PIP2.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_PIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_DIP2.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_DIP2.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_DIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + MIDDLE_FINGER_TIP2.transform.position.x.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + MIDDLE_FINGER_TIP2.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + RING_FINGER_MCP2.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_MCP2.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_MCP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_PIP2.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_PIP2.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_PIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_DIP2.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_DIP2.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_DIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + RING_FINGER_TIP2.transform.position.x.ToString().Replace(",", ".") + " " + RING_FINGER_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + RING_FINGER_TIP2.transform.position.z.ToString().Replace(",", ".");
-
-                line += "," + PINKY_MCP2.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_MCP2.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_MCP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_PIP2.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_PIP2.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_PIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_DIP2.transform.position.x.ToString().Replace(",", ".") + " " + PINKY_DIP2.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_DIP2.transform.position.z.ToString().Replace(",", ".");
-                line += "," + PINKY_TIP2.transform.position.x.ToString().Replace(",",".") + " " + PINKY_TIP2.transform.position.y.ToString().Replace(",", ".") + " " + PINKY_TIP2.transform.position.z.ToString().Replace(",", ".")*/ /*+ "\n"*/;
-
-            /*log.GetComponent<DataLogs>().Log(line);
-            line = "";
-        }*/
-
-            //wristRightX = WRIST.transform.position.x;
-            //wristLeftX = WRIST2.transform.position.x;
-
-        /*}*/
         
     }
 

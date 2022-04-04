@@ -4025,6 +4025,27 @@ MonoBehaviour:
   PINKY_PIP: {fileID: 1468876975}
   PINKY_DIP: {fileID: 1698346838}
   PINKY_TIP: {fileID: 384601597}
+  p0pos: {x: 0, y: 0, z: 0}
+  p1pos: {x: 0, y: 0, z: 0}
+  p2pos: {x: 0, y: 0, z: 0}
+  p3pos: {x: 0, y: 0, z: 0}
+  p4pos: {x: 0, y: 0, z: 0}
+  p5pos: {x: 0, y: 0, z: 0}
+  p6pos: {x: 0, y: 0, z: 0}
+  p7pos: {x: 0, y: 0, z: 0}
+  p8pos: {x: 0, y: 0, z: 0}
+  p9pos: {x: 0, y: 0, z: 0}
+  p10pos: {x: 0, y: 0, z: 0}
+  p11pos: {x: 0, y: 0, z: 0}
+  p12pos: {x: 0, y: 0, z: 0}
+  p13pos: {x: 0, y: 0, z: 0}
+  p14pos: {x: 0, y: 0, z: 0}
+  p15pos: {x: 0, y: 0, z: 0}
+  p16pos: {x: 0, y: 0, z: 0}
+  p17pos: {x: 0, y: 0, z: 0}
+  p18pos: {x: 0, y: 0, z: 0}
+  p19pos: {x: 0, y: 0, z: 0}
+  p20pos: {x: 0, y: 0, z: 0}
   WRIST2: {fileID: 792938059}
   THUMB_CMC2: {fileID: 508595330}
   THUMB_MCP2: {fileID: 389286664}
@@ -4500,7 +4521,7 @@ MonoBehaviour:
   INDEX_FINGER_TIP: {fileID: 778493386}
   MIDDLE_FINGER_MCP: {fileID: 376463778}
   MIDDLE_FINGER_PIP: {fileID: 2038396030}
-  MIDDLE_FINGER_DIP: {fileID: 2038396030}
+  MIDDLE_FINGER_DIP: {fileID: 1582649192}
   MIDDLE_FINGER_TIP: {fileID: 1811361274}
   RING_FINGER_MCP: {fileID: 1785770505}
   RING_FINGER_PIP: {fileID: 379987313}

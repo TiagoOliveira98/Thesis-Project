@@ -60,14 +60,14 @@ public class DataLogs : MonoBehaviour
                 timestamp = (long)timePass.TotalSeconds;
                 string path = Directory.GetCurrentDirectory();
                 //path += @"\DataLogging\JointData\Logs(0).csv";
-                path += @"/DataLogging/JointData/Logs" + "(" + timestamp + ")_" + Calibration.user + "_" + SceneManager.GetActiveScene().name + ".csv";
+                path += @"/DataLogging/JointData/Logs" + "(" + timestamp + ")_" + Calibration.user + "_" + SceneManager.GetActiveScene().name + "_Difficulty2.csv";
                 Directory.CreateDirectory(@"DataLogging/JointData");
                 fileWriter = File.CreateText(path);
 
                 ev = "";
                 time = 0;
 
-                aux = 10;
+                aux = 2;
 
                 line = "WRIST,THUMB_CMC,THUMB_MCP,THUMB_IP,THUMB_TIP," +
                     "INDEX_FINGER_MCP,INDEX_FINGER_PIP,INDEX_FINGER_DIP,INDEX_FINGER_TIP," +
@@ -92,7 +92,7 @@ public class DataLogs : MonoBehaviour
                 time += Time.fixedDeltaTime;
                 //Testing to keep the frequency of loggin constant
                 ////Logging Data
-                if (aux == 10)
+                if (aux == 2)
                 {
                     //if (GameObject.Find("BucketBlue") != null /*&& wristRightX != WRIST.transform.position.x && wristLeftX != WRIST2.transform.position.x*/)
                     //if (GameObject.Find("Bucket") == null)
@@ -184,7 +184,7 @@ public class DataLogs : MonoBehaviour
                 //line += ";" + time.ToString("F3");
                 //fileWriter.WriteLine(line);
                 //fileWriter.WriteLine(line + ";" + time.ToString("F3"));
-                fileWriter.WriteLine($"{line},{time.ToString("F3").Replace(",",".")},{eve}");
+                fileWriter.WriteLine($"{line},{time.ToString("F5").Replace(",",".")},{eve}");
             }
             else
             {
