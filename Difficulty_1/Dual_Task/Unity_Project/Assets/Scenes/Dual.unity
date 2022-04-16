@@ -5047,7 +5047,6 @@ GameObject:
   m_Component:
   - component: {fileID: 930075191}
   - component: {fileID: 930075193}
-  - component: {fileID: 930075192}
   m_Layer: 0
   m_Name: StroopTest
   m_TagString: Untagged
@@ -5069,25 +5068,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &930075192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930075190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 428a6c265859c604480043a3fcfe97b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0
-  t: 0
-  stroop: {fileID: 1603236482}
-  equal: 0
-  color1: 
-  color2: 
-  allow: 0
 --- !u!114 &930075193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5107,6 +5087,10 @@ MonoBehaviour:
   color1: 
   color2: 
   allow: 0
+  errors: 0
+  change: 0
+  numberEquations: 0
+  wasCorrect: 0
 --- !u!1 &930103083
 GameObject:
   m_ObjectHideFlags: 0
@@ -12990,7 +12974,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -13049,6 +13033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounter: {fileID: 3654762574175084338}
   elapsedTime: 0
+  elapsedTimeOut: 0
   go: 0
 --- !u!1 &4857830207245367109
 GameObject:

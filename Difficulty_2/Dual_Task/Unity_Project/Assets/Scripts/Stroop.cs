@@ -15,14 +15,29 @@ public class Stroop : MonoBehaviour
 
     public int allow;
 
+    public int errors;
+
+    public int change;
+
+    public int numberEquations;
+
+    GameObject cameras;
+    Points points;
+
     //public Text s;
 
     // Start is called before the first frame update
     void Start()
     {
+        cameras = GameObject.Find("Main Camera");
+        points = cameras.GetComponent<Points>();
+
         time = 0f;
         check = 1;
         allow = 1;
+        errors = 0;
+        change = 0;
+        numberEquations = 0;
 
         a = 0;
     }
@@ -91,10 +106,16 @@ public class Stroop : MonoBehaviour
 
     }
 
+    void ChangeEquation()
+    {
+        change = 1;
+
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 && check == 1)
+        /*if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 && check == 1)
         {
             if (a == 0)
             {
@@ -106,6 +127,37 @@ public class Stroop : MonoBehaviour
             check = 0;
             Invoke("StroopFunction", 5);
 
+        }*/
+
+        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0)
+            time += Time.deltaTime;
+
+        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ && time > 3f)
+        {
+            if (Confirmation.answer == "" && GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
+            {
+                points.point += 1;
+            }
+            else if (Confirmation.answer != "" && GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
+            {
+                //points.point -= 1;
+                errors += 1;
+            }
+            else if (Confirmation.answer == "" && GameObject.Find("Calculator").GetComponent<Calculator>().even == true)
+            {
+                errors += 1;
+            }
+            //check = 0;
+            //Invoke("ChangeEquation", 3);
+            ChangeEquation();
+
+            //errors += 1;
+            numberEquations += 1;
+        }
+
+        if (numberEquations == 20)
+        {
+            Application.Quit();
         }
     }
 }

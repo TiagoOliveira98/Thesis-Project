@@ -10,6 +10,8 @@ public class Calculator : MonoBehaviour
 
     public GameObject screen;
 
+    public bool even;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +26,14 @@ public class Calculator : MonoBehaviour
     {
         //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().solution = solution;
         //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().initial = initial;
-        if(correct == true)
+        if(correct == true || GameObject.Find("StroopTest").GetComponent<Stroop>().change == 1)
         {
             initial = GenerateEquation();
             screen.GetComponent<TextMesh>().text = initial;
             correct = false;
+
+            GameObject.Find("StroopTest").GetComponent<Stroop>().change = 0;
+            GameObject.Find("StroopTest").GetComponent<Stroop>().time = 0f;
         }
     }
 
@@ -41,27 +46,41 @@ public class Calculator : MonoBehaviour
         int operation = Random.Range(1, 4);
         if(operation == 1)
         {
-            num1 = Random.Range(0, 10);
-            num2 = Random.Range(0, 10);
+            num1 = Random.Range(0, 5);
+            num2 = Random.Range(0, 5);
 
             ans = num1 * num2;
             solution = ans.ToString();
+
+            if (ans % 2 == 0 || ans == 0)
+            {
+                even = true;
+            }
+            else
+                even = false;
 
             return (CreateString(num1.ToString(), num2.ToString(), ans, 'x'));
         }
         else if(operation==2)
         {
-            num1 = Random.Range(0, 40);
-            num2 = Random.Range(0, 40);
+            num1 = Random.Range(0, 11);
+            num2 = Random.Range(0, 11);
             ans = num1 + num2;
             solution = ans.ToString();
+
+            if (ans % 2 == 0 || ans == 0)
+            {
+                even = true;
+            }
+            else
+                even = false;
 
             return (CreateString(num1.ToString(), num2.ToString(), ans, '+'));
         }
         else
         {
-            int aux = Random.Range(0, 40);
-            int aux2 = Random.Range(0, 40);
+            int aux = Random.Range(0, 11);
+            int aux2 = Random.Range(0, 11);
             if(aux >= aux2)
             {
                 num1 = aux;
@@ -77,6 +96,13 @@ public class Calculator : MonoBehaviour
             solution = ans.ToString();
             string n1 = num1.ToString();
             string n2 = num2.ToString();
+
+            if (ans % 2 == 0 || ans == 0)
+            {
+                even = true;
+            }
+            else
+                even = false;
 
             return (CreateString(n1, n2, ans, '-'));
         }

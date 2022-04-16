@@ -88,14 +88,11 @@ public class DataLogs : MonoBehaviour
             }
             else
             {
-                //time += Time.unscaledDeltaTime;
                 time += Time.fixedDeltaTime;
-                //Testing to keep the frequency of loggin constant
+              
                 ////Logging Data
                 if (aux == 2)
                 {
-                    //if (GameObject.Find("BucketBlue") != null /*&& wristRightX != WRIST.transform.position.x && wristLeftX != WRIST2.transform.position.x*/)
-                    //if (GameObject.Find("Bucket") == null)
                     {
                         //Right Hand
                         line += WRIST.transform.position.x.ToString().Replace(",", ".") + " " + WRIST.transform.position.y.ToString().Replace(",", ".") + " " + WRIST.transform.position.z.ToString().Replace(",", ".");

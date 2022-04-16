@@ -10,6 +10,8 @@ public class Calculator : MonoBehaviour
 
     public GameObject screen;
 
+    public bool even;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +26,14 @@ public class Calculator : MonoBehaviour
     {
         //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().solution = solution;
         //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().initial = initial;
-        if(correct == true)
+        if(correct == true || GameObject.Find("StroopTest").GetComponent<Stroop>().change == 1)
         {
             initial = GenerateEquation();
             screen.GetComponent<TextMesh>().text = initial;
             correct = false;
+
+            GameObject.Find("StroopTest").GetComponent<Stroop>().change = 0;
+            GameObject.Find("StroopTest").GetComponent<Stroop>().time = 0f;
         }
     }
 
@@ -41,8 +46,8 @@ public class Calculator : MonoBehaviour
         int operation = Random.Range(1, 4);
         if(operation == 1)
         {
-            num1 = Random.Range(0, 10);
-            num2 = Random.Range(0, 10);
+            num1 = Random.Range(0, 5);
+            num2 = Random.Range(0, 5);
 
             ans = num1 * num2;
             //solution = ans.ToString();
@@ -53,52 +58,96 @@ public class Calculator : MonoBehaviour
                 //Added
                 while (num2 == ans && num2 == 0)
                 {
-                    num1 = Random.Range(0, 10);
-                    num2 = Random.Range(0, 10);
+                    num1 = Random.Range(0, 5);
+                    num2 = Random.Range(0, 5);
 
                     ans = num1 * num2;
                 }
 
                 solution = num1.ToString();
+
+                if (num1 % 2 == 0 || num1 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
             else if (parcel == 2)
             {
                 //Added
                 while (num1 == ans && num1 == 0)
                 {
-                    num1 = Random.Range(0, 10);
-                    num2 = Random.Range(0, 10);
+                    num1 = Random.Range(0, 5);
+                    num2 = Random.Range(0, 5);
 
                     ans = num1 * num2;
                 }
 
                 solution = num2.ToString();
+
+                if (num2 % 2 == 0 || num2 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
             else if (parcel == 3)
             {
                 solution = ans.ToString();
+
+                if (ans % 2 == 0 || ans == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
 
             return (CreateString(num1, num2, ans, 'x', parcel));
         }
         else if(operation==2)
         {
-            num1 = Random.Range(0, 40);
-            num2 = Random.Range(0, 40);
+            num1 = Random.Range(0, 11);
+            num2 = Random.Range(0, 11);
             ans = num1 + num2;
 
             int parcel = Random.Range(1, 4);
             if (parcel == 1)
             {
                 solution = num1.ToString();
+
+                if (num1 % 2 == 0 || num1 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
+
             }
             else if (parcel == 2)
             {
                 solution = num2.ToString();
+
+                if (num2 % 2 == 0 || num2 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
+
             }
             else if (parcel == 3)
             {
                 solution = ans.ToString();
+
+                if (ans % 2 == 0 || ans == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
 
             //solution = ans.ToString();
@@ -107,8 +156,8 @@ public class Calculator : MonoBehaviour
         }
         else
         {
-            int aux = Random.Range(0, 40);
-            int aux2 = Random.Range(0, 40);
+            int aux = Random.Range(0, 11);
+            int aux2 = Random.Range(0, 11);
             if(aux >= aux2)
             {
                 num1 = aux;
@@ -128,14 +177,35 @@ public class Calculator : MonoBehaviour
             if (parcel == 1)
             {
                 solution = num1.ToString();
+
+                if (num1 % 2 == 0 || num1 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
             else if (parcel == 2)
             {
                 solution = num2.ToString();
+
+                if (num2 % 2 == 0 || num2 == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
             else if (parcel == 3)
             {
                 solution = ans.ToString();
+
+                if (ans % 2 == 0 || ans == 0)
+                {
+                    even = true;
+                }
+                else
+                    even = false;
             }
 
             return (CreateString(num1, num2, ans, '-',parcel));

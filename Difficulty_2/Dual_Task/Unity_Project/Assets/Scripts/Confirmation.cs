@@ -82,13 +82,17 @@ public class Confirmation : MonoBehaviour
         //Verify if there was a collsion with a finger tip and if there is already input to confirm
         if ((other.name == "INDEX_FINGER_TIP" || other.name == "INDEX_FINGER_TIP2") && canConfirm == true)
         {
+            if (answer != "" && GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
+            {
+                GameObject.Find("StroopTest").GetComponent<Stroop>().errors += 1;
+            }
             //Get the solution to the problem created in teh Calculator object script
             solution = GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution;
 
             StartIn();
 
-            if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
-            {
+            /*if (GameObject.Find("StroopTest").GetComponent<Stroop>().allow == 1)
+            {*/
                 //Case if the answer and solution are the same
                 if (answer == GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution)
                 {
@@ -106,6 +110,8 @@ public class Confirmation : MonoBehaviour
 
                     //Text.GetComponent<Text>().text = latest;
 
+                    GameObject.Find("StroopTest").GetComponent<Stroop>().numberEquations += 1;
+
                 }
                 else
                 {
@@ -114,18 +120,18 @@ public class Confirmation : MonoBehaviour
                     //Reset the answer
                     answer = "";
                     //NEW
-                    points.point = 0;
-
-
+                    GameObject.Find("StroopTest").GetComponent<Stroop>().change = 1;
+                    GameObject.Find("StroopTest").GetComponent<Stroop>().errors += 1;
+                    GameObject.Find("StroopTest").GetComponent<Stroop>().numberEquations += 1;
                 }
-            }
+            /*}
             else
             {
                 if (points.point > 0)
                     points.point -= 1;
                 else
                     points.point = 0;
-            }
+            }*/
             //Disable confirmations after entering aan answer
             canConfirm = false;
         }
