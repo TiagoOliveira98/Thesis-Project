@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 103
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 108
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 83
+  controlID: 109
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -396,8 +396,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 520b0000
-      m_LastClickedID: 0
+      m_SelectedIDs: 4a410000
+      m_LastClickedID: 16714
       m_ExpandedIDs: 52fbffff5441000074410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.09317103, y: 0.008061361, z: -0.0007542641, w: -0.99561787}
     speed: 2
-    m_Value: {x: -0.09317098, y: 0.008061356, z: -0.00075426366, w: -0.9956173}
+    m_Value: {x: -0.09317102, y: 0.008061361, z: -0.0007542641, w: -0.9956178}
   m_Size:
     m_Target: 8.007811
     speed: 2
@@ -584,13 +584,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\tiago\Documents\Thesis-Project\Difficulty_2_NEW_UPDATE\Cognitive_Task\Unity_Project
+  m_LastProjectPath: C:\Users\tiago\Documents\Thesis-Project\Difficulty_2_NEW\Cognitive_Task\Unity_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d6410000
-    m_LastClickedID: 16854
+    m_SelectedIDs: da410000
+    m_LastClickedID: 16858
     m_ExpandedIDs: 00000000cc41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
