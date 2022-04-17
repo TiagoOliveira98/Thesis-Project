@@ -10,7 +10,7 @@ public class Chrono : MonoBehaviour
 
     public TimeSpan timePlaying;
 
-    public float elapsedTime;
+    public float elapsedTime, elapsedTimeOut;
 
     string timePlayingStr;
 
@@ -29,7 +29,9 @@ public class Chrono : MonoBehaviour
         if (go)
         {
             elapsedTime += Time.deltaTime;
-            timePlaying = TimeSpan.FromSeconds(elapsedTime);
+            elapsedTimeOut = 60f - elapsedTime;
+            timePlaying = TimeSpan.FromSeconds(elapsedTimeOut);
+
             timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
             timeCounter.text = timePlayingStr;
         }
