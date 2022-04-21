@@ -16,6 +16,8 @@ public class Stroop : MonoBehaviour
 
     public int errors;
 
+    public int timeErrors, evenErrors, wrongErrors;
+
     public int change;
 
     public int numberEquations;
@@ -126,6 +128,7 @@ public class Stroop : MonoBehaviour
             else if (GameObject.Find("Calculator").GetComponent<Calculator>().even == true)
             {
                 errors += 1;
+                evenErrors += 1;
             }
 
             ChangeEquation();
@@ -136,8 +139,8 @@ public class Stroop : MonoBehaviour
 
         if (numberEquations == 20)
         {
-            //Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 }
