@@ -48,6 +48,10 @@ public class Calculator : MonoBehaviour
         //GameObject.Find("Confirmation").gameObject.GetComponent<Confirmation>().initial = initial;
         if(correct == true )
         {
+            if(i == 20)
+            {
+
+            }
             initial = GenerateEquationNew();
             if(check == 0)
             {
