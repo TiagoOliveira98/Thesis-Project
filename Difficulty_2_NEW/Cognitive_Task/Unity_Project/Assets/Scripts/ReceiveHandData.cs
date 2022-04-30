@@ -422,12 +422,18 @@ public class ReceiveHandData : MonoBehaviour {
                 s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().wrongErrors.ToString();
                 check.GetComponent<DataLogs>().ev += s;
 
+                s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().errors.ToString();
+                check.GetComponent<DataLogs>().ev += s;
+
                 //
                 s = " " + points.point;
                 check.GetComponent<DataLogs>().ev += s;
 
                 //NEW
-                s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().allow.ToString();
+                s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().numberEquations.ToString();
+                check.GetComponent<DataLogs>().ev += s;
+
+                s = " " + GameObject.Find("Calculator").GetComponent<Calculator>().even.ToString();
                 check.GetComponent<DataLogs>().ev += s;
             }
         

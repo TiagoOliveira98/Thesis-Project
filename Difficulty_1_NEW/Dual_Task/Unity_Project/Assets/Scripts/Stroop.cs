@@ -115,7 +115,7 @@ public class Stroop : MonoBehaviour
         if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0)
             time += Time.deltaTime;
 
-        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ && time > 3f)
+        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ && time > 4f)
         {
             if (GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
             {

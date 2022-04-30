@@ -430,6 +430,9 @@ public class ReceiveHandData : MonoBehaviour {
                 //NEW
                 s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().allow.ToString();
                 check.GetComponent<DataLogs>().ev += s;
+
+                s = " " + GameObject.Find("Calculator").GetComponent<Calculator>().even.ToString();
+                check.GetComponent<DataLogs>().ev += s;
             }
         
     }

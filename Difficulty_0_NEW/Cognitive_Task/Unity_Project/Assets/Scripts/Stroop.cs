@@ -115,7 +115,7 @@ public class Stroop : MonoBehaviour
         if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0)
             time += Time.deltaTime;
 
-        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ & time >3f)
+        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ & time >4f)
         {
             //stroop.GetComponent<RectTransform>().localScale = new Vector3(2f, 2f, 1f);
             //check = 0;
@@ -139,8 +139,8 @@ public class Stroop : MonoBehaviour
 
         if (numberEquations == 20)
         {
-            Application.Quit();
-            //UnityEditor.EditorApplication.isPlaying = false;
+            //Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 }

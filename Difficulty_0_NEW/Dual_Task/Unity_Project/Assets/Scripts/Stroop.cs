@@ -16,6 +16,8 @@ public class Stroop : MonoBehaviour
 
     public int errors;
 
+    public int timeErrors, evenErrors, wrongErrors;
+
     public int change;
 
     public int numberEquations;
@@ -36,6 +38,10 @@ public class Stroop : MonoBehaviour
         allow = 1;
 
         errors = 0;
+
+        evenErrors = 0;
+        wrongErrors = 0;
+
         change = 0;
         numberEquations = 0;
     }
@@ -113,7 +119,7 @@ public class Stroop : MonoBehaviour
         if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0)
             time += Time.deltaTime;
 
-        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ && time > 3f)
+        if (GameObject.Find("Chronometer").GetComponent<Chrono>().elapsedTime > 0 /*&& check == 1*/ && time > 4f)
         {
             if (GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
             {
@@ -122,6 +128,7 @@ public class Stroop : MonoBehaviour
             else if (GameObject.Find("Calculator").GetComponent<Calculator>().even == true)
             {
                 errors += 1;
+                evenErrors += 1;
             }
             //check = 0;
             //Invoke("ChangeEquation", 3);
@@ -133,7 +140,8 @@ public class Stroop : MonoBehaviour
 
         if (numberEquations == 20)
         {
-            Application.Quit();
+            //Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
         }
 
 
