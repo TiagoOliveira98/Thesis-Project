@@ -3947,7 +3947,7 @@ MonoBehaviour:
   leftHand: {fileID: 1595947949}
   grabRight: {fileID: 145983042}
   grabLeft: {fileID: 277856037}
-  log: {fileID: 0}
+  log: {fileID: 810949602}
   ref1: 0
   ref2: 0
 --- !u!81 &744174479
@@ -5680,7 +5680,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Open your hands around 70 cm from the camera\n\nOnly interact with the
     calculator if the Correct answer to the equation is an EVEN NUMBER\n\nYou have
-    3 seconds to answer, if necessary, to each equation. \n20 equations in total\n"
+    4 seconds to answer, if necessary, to each equation. \n20 equations in total\n"
 --- !u!222 &1127614498
 CanvasRenderer:
   m_ObjectHideFlags: 0

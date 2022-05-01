@@ -5651,7 +5651,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Only interact with the calculator if the Correct answer to the equation
-    is an EVEN NUMBER\n\nYou have 3 seconds to answer, if necessary, to each equation.
+    is an EVEN NUMBER\n\nYou have 4 seconds to answer, if necessary, to each equation.
     \n20 equations in total\n\nRight/Left Arrows to aswer Correct/Wrong respectively"
 --- !u!222 &1127614498
 CanvasRenderer:

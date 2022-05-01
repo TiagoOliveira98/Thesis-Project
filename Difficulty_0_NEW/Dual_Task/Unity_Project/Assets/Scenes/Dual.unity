@@ -5680,7 +5680,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Open your hands around 70 cm from the camera\n\nOnly interact with the
     calculator if the Correct answer to the equation is an EVEN NUMBER\n\nYou have
-    3 seconds to answer, if necessary, to each equation. \n20 equations in total"
+    4 seconds to answer, if necessary, to each equation. \n20 equations in total"
 --- !u!222 &1127614498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7764,6 +7764,9 @@ MonoBehaviour:
   color2: 
   allow: 0
   errors: 0
+  timeErrors: 0
+  evenErrors: 0
+  wrongErrors: 0
   change: 0
   numberEquations: 0
 --- !u!4 &1495361598

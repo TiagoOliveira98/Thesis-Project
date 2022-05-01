@@ -62,7 +62,7 @@ public class HighScore : MonoBehaviour
         }
     }
 
-    private void OnApplicationQuit()
+    /*rivate void OnApplicationQuit()
     {
         if(change)
         {
@@ -71,5 +71,5 @@ public class HighScore : MonoBehaviour
             writer.WriteLine("Highscore:" + num);
             writer.Close();
         }
-    }
+    }*/
 }

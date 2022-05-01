@@ -136,7 +136,8 @@ public class Stroop : MonoBehaviour
 
         if (numberEquations == 20)
         {
-            Application.Quit();
+            //Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
         }
 
 

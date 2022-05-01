@@ -22,6 +22,8 @@ public class Calculator : MonoBehaviour
 
     public bool even;
 
+    //public int numberEquations;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,8 @@ public class Calculator : MonoBehaviour
 
         i = 0;
 
+        //numberEquations = 0;
+
         EquationVector();
     }
 
@@ -49,7 +53,8 @@ public class Calculator : MonoBehaviour
         if(correct == true )
         {
             if (i == 20)
-                Application.Quit();
+                UnityEditor.EditorApplication.isPlaying = false;
+                //Application.Quit();
 
             initial = GenerateEquationNew();
             if(check == 0)

@@ -3768,7 +3768,7 @@ MonoBehaviour:
   leftHand: {fileID: 1595947949}
   grabRight: {fileID: 145983042}
   grabLeft: {fileID: 277856037}
-  log: {fileID: 0}
+  log: {fileID: 810949602}
   ref1: 0
   ref2: 0
 --- !u!81 &744174479

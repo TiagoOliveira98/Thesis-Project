@@ -50,7 +50,8 @@ public class Calculator : MonoBehaviour
         {
             if(i == 20)
             {
-
+                UnityEditor.EditorApplication.isPlaying = false;
+                //Application.Quit();
             }
             initial = GenerateEquationNew();
             if(check == 0)
@@ -135,9 +136,14 @@ public class Calculator : MonoBehaviour
 
     string GenerateEquationNew()
     {
-        check = auxCheck[i];
-        i += 1;
-        return aux[i - 1];
+        if (i < 20)
+        {
+            check = auxCheck[i];
+            i += 1;
+            return aux[i - 1];
+        }
+
+        return null;
     }
 
 

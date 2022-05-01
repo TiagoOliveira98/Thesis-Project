@@ -380,6 +380,9 @@ public class ReceiveHandData : MonoBehaviour {
             s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().wrongErrors.ToString();
             check.GetComponent<DataLogs>().ev += s;
 
+            s = " " + GameObject.Find("StroopTest").GetComponent<Stroop>().errors.ToString();
+            check.GetComponent<DataLogs>().ev += s;
+
             s = " " + points.point;
             check.GetComponent<DataLogs>().ev += s;
 

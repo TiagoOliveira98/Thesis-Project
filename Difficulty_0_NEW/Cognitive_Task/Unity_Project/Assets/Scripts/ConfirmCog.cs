@@ -89,8 +89,13 @@ public class ConfirmCog : MonoBehaviour
     {
         if (GameObject.Find("Calculator").GetComponent<Calculator>().even == false)
         {
+            GameObject.Find("StroopTest").GetComponent<Stroop>().change = 1;
             GameObject.Find("StroopTest").GetComponent<Stroop>().errors += 1;
             GameObject.Find("StroopTest").GetComponent<Stroop>().evenErrors += 1;
+
+            GameObject.Find("StroopTest").GetComponent<Stroop>().numberEquations += 1;
+
+            return;
         }
         //Get the solution to the problem created in teh Calculator object script
         //solution = GameObject.Find("Calculator").gameObject.GetComponent<Calculator>().solution;

@@ -420,6 +420,9 @@ public class ReceiveHandData : MonoBehaviour {
 
                 s = " " + points.point;
                 check.GetComponent<DataLogs>().ev += s;
+                
+                s = " " + GameObject.Find("Calculator").GetComponent<Calculator>().i.ToString();
+                check.GetComponent<DataLogs>().ev += s;
 
             }
 

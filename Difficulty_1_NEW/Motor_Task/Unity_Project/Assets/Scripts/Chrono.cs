@@ -30,7 +30,7 @@ public class Chrono : MonoBehaviour
         if (go)
         {
             elapsedTime += Time.deltaTime;
-            elapsedTimeOut = 60f - elapsedTime;
+            elapsedTimeOut = 80f - elapsedTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTimeOut);
 
             timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
