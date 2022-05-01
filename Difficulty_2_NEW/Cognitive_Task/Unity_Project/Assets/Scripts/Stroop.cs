@@ -25,6 +25,8 @@ public class Stroop : MonoBehaviour
     GameObject cameras;
     Points points;
 
+    public GameObject sign;
+
     //public Text s;
 
     // Start is called before the first frame update
@@ -135,6 +137,16 @@ public class Stroop : MonoBehaviour
 
             numberEquations += 1;
 
+        }
+
+        //For the sign
+        if (time > 3f)
+        {
+            sign.transform.position = new Vector3(-5f, 1.1f, 0f);
+        }
+        else
+        {
+            sign.transform.position = new Vector3(-5f, 100f, 0f);
         }
 
         if (numberEquations == 20)

@@ -45,7 +45,8 @@ public class Calculator : MonoBehaviour
         if(correct == true || GameObject.Find("StroopTest").GetComponent<Stroop>().change == 1)
         {
             if (i == 20)
-                Application.Quit();
+                UnityEditor.EditorApplication.isPlaying = false;
+                //Application.Quit();
             initial = GenerateEquationNew();
             screen.GetComponent<TextMesh>().text = initial;
             correct = false;
@@ -124,10 +125,14 @@ public class Calculator : MonoBehaviour
 
     string GenerateEquationNew()
     {
-        even = auxEven[i];
-        check = auxCheck[i];
-        i += 1;
-        return aux[i - 1];
+        if (i < 20)
+        {
+            even = auxEven[i];
+            check = auxCheck[i];
+            i += 1;
+            return aux[i - 1];
+        }
+        return null;
     }
 
 
